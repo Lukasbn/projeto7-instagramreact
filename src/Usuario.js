@@ -1,11 +1,28 @@
+import { useState } from "react"
+
 export default function Usuario() {
+    const [name , setName] = useState("Anônimo");
+    const [img , setImg] = useState("assets/img/usuarioAnonimo.png")
+    function AlterarNome(){
+        const novoNome = prompt("insira o seu novo nome!")
+        if (novoNome){
+            setName(novoNome);
+        }
+    }
+    function AlterarImg(){
+        const novaImg = prompt("insira o link da sua nova foto!")
+        if (novaImg){
+            setImg(novaImg);
+        }
+    }
+
     return (
         <div class="usuario">
-            <img src="assets/img/catanacomics.svg" alt="imagem de perfil" />
+            <img onClick={AlterarImg} src={img} alt="imagem de perfil" />
             <div class="texto">
                 <span>
-                    <strong>catanacomics</strong>
-                    <ion-icon name="pencil"></ion-icon>
+                    <strong>{name}</strong>
+                    <ion-icon onClick={AlterarNome} name="pencil"></ion-icon>
                 </span>
             </div>
         </div>
