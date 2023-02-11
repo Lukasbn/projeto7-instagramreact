@@ -9,7 +9,7 @@ export default function Posts() {
             alt: "gato-telefone",
             curtiu: "assets/img/respondeai.svg",
             curtiuNome: "respondeai",
-            quantidade: 101.529
+            quantidade: 101.523
         },
         {
             perfil: "assets/img/barked.svg",
@@ -18,7 +18,7 @@ export default function Posts() {
             alt: "dog",
             curtiu: "assets/img/adorable_animals.svg",
             curtiuNome: "adorable_animals",
-            quantidade: 99.159
+            quantidade: 99.158
         },
         {
             perfil: "https://i.pinimg.com/originals/f0/af/cb/f0afcbce7ed4a7df7b822964501bf995.jpg",
@@ -27,7 +27,7 @@ export default function Posts() {
             alt: "Binks no sake",
             curtiu: "https://i.pinimg.com/564x/6c/0b/25/6c0b252b8d6c90099f71b49c201c2f60.jpg",
             curtiuNome: "Roronoa",
-            quantidade: 485.025
+            quantidade: 547.158
         }
     ]
 
