@@ -32,8 +32,8 @@ export default function Posts() {
     ]
 
     return (
-        <div class="posts">
-            {ListaPosts.map((post) => <Post
+        <div className="posts">
+            {ListaPosts.map((post,index) => <Post
                 perfil={post.perfil}
                 nome={post.nome}
                 foto={post.foto}
@@ -41,6 +41,7 @@ export default function Posts() {
                 curtiu={post.curtiu}
                 curtiuNome={post.curtiuNome}
                 quantidade={post.quantidade}
+                key={index}
             />)}
 
         </div>

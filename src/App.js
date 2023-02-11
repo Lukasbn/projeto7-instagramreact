@@ -3,7 +3,7 @@ import Corpo from "./Corpo";
 
 export default function App() {
     return (
-        <div class="root">
+        <div className="root">
             <Navbar/>
             <Corpo/>
         </div>

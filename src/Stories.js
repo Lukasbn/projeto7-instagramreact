@@ -13,11 +13,11 @@ export default function Stories() {
     ]
 
     return (
-        <div class="stories">
+        <div className="stories">
             
             {ListaStories.map((story) => <Story key={story.nome} nome={story.nome} img={story.img} />)}
 
-            <div class="setinha">
+            <div className="setinha">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>

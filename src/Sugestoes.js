@@ -29,28 +29,28 @@ export default function Sugestoes() {
 
     function Sugestao(prop){
         return(
-            <div class="sugestao">
-                <div class="usuario">
+            <div className="sugestao">
+                <div className="usuario">
                     <img src={prop.img} alt={prop.nome} />
-                    <div class="texto">
-                        <div class="nome">{prop.nome}</div>
-                        <div class="razao">{prop.razao}</div>
+                    <div className="texto">
+                        <div className="nome">{prop.nome}</div>
+                        <div className="razao">{prop.razao}</div>
                     </div>
                 </div>
 
-                <div class="seguir">Seguir</div>
+                <div className="seguir">Seguir</div>
             </div>
         )
     }
 
     return (
-        <div class="sugestoes">
-            <div class="titulo">
+        <div className="sugestoes">
+            <div className="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
 
-            {ListaSugestao.map((sugest)=> <Sugestao nome={sugest.nome} img={sugest.img} razao={sugest.razao} />)}
+            {ListaSugestao.map((sugest)=> <Sugestao key={sugest.nome} nome={sugest.nome} img={sugest.img} razao={sugest.razao} />)}
 
         </div>
     )
